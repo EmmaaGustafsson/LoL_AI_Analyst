@@ -46,3 +46,41 @@ Because each match can occur at several different frames, the project focuses on
 
 ```python
 df[df["frame"] == 10]
+
+## Installation
+
+### Requirements
+
+- Python 3.10 or later
+- Git
+- A virtual environment is recommended
+
+### 1. Clone the repository
+
+Clone the repository and navigate to the project directory:
+
+```bash
+git clone <repository-url>
+cd LoL_AI_Analyst
+
+### 2.Create a Python virtual environment in the project directory:
+
+python -m venv .venv
+
+### 3. Activate the virtual environment
+
+## Bash
+
+source .venv/Scripts/activate
+
+## PowerShell
+
+.venv\Scripts\Activate.ps1
+
+### 4. Install requirements
+
+python -m pip install -r requirements.txt
+
+### 5. Run the application
+
+python -m streamlit run app/app.py
