@@ -387,10 +387,8 @@ if analyze:
     # Check feature order
     # --------------------------------------------------
 
-    expected_features = pd.read_csv(
-        BASE_DIR / "data" / "processed" / "X_train.csv",
-        nrows=0
-    ).columns.tolist()
+    expected_features = list(model.feature_names_in_)
+
 
     if input_df.columns.tolist() != expected_features:
 
