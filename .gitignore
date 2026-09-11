@@ -223,7 +223,8 @@ data/raw/
 data/processed/
 
 # Tränade modeller
-models/
+models/*
+!models/best_model.pkl
 
 # Jupyter
 .ipynb_checkpoints/
